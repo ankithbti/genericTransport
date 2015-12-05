@@ -24,7 +24,7 @@ set(LIBRARY_OUTPUT_PATH  ${CMAKE_BINARY_DIR})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp src/PBProtocol.cpp include/PBProtocol.hpp)
 
 configure_file(
         "${PROJECT_SOURCE_DIR}/main.cpp.in"
