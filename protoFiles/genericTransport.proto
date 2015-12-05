@@ -1,0 +1,5 @@
+package genericTransport;
+
+message HeartBeat {
+    required string hbText = 1 ;
+}
