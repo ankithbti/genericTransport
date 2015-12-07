@@ -5,8 +5,10 @@
 #ifndef GENERICTRANSPORT_PBPROTOCOL_HPP
 #define GENERICTRANSPORT_PBPROTOCOL_HPP
 
+namespace genericTransport {
 class PBProtocol {
 
 };
+}
 
 #endif //GENERICTRANSPORT_PBPROTOCOL_HPP
