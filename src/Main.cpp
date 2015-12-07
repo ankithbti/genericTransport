@@ -1,5 +1,6 @@
 #include <iostream>
 #include <TcpServerTransport.hpp>
+#include <Setting.hpp>
 
 namespace genericTransport{
 class SA {
@@ -13,7 +14,11 @@ public:
 
 int main(){
     std::cout << " Testing " << std::endl;
-    
+
+    fitiedCoreCpp::appSetting::Setting::SmartPtr setting(new fitiedCoreCpp::appSetting::Setting("AttrName", "AttrValue"));
+
+    std::cout << setting->getValue() << std::endl;
+
     genericTransport::TcpServerTransport<genericTransport::SA> tcpServer("127.0.0.1", "9867");
     tcpServer.start();
     
